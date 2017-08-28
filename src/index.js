@@ -76,9 +76,9 @@ function returnCounter(number) {
 */
 function bindFunction(fn) {
     
-    // var args = [].slice.call(arguments).slice(1);
+    var args = [].slice.call(arguments).slice(1);
     
-    // fn.bind(fn, ...args);
+    fn = fn.bind(fn, ...args);
 
     return fn;
 }
