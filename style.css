@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #999999;
+}
+
+.container{
+    width: 620px;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    background-color: #ff8663;
+    font-weight: 500;
+    color: #FFF;
+    height: 45px;
+    padding: 0 15px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    padding: 0 20px;
+    background-color: #f0f0f0;
+}
+
+.search__input{
+    height: 30px;
+    border-radius: 50px;
+    border: 0;
+    width: calc(50% - 15px);
+    outline: none;
+    font-size: 16px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.friends{
+    display: flex;
+
+}
+
+    .friends > div{
+        width: 50%;
+        background-color: #fff;
+        padding: 15px 0 0 15px;
+        overflow: hidden;
+        box-sizing: border-box
+    }
+
+    .left, .right{
+        width: 100%;
+    }
+
+    .left{
+        border-right: 1px solid #f0f0f0;
+    }
+
+    .friends__title{
+        font-size: 12px;
+        font-weight: 500;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        padding-bottom: 5px;
+    }
+
+    .friends__list{
+        list-style-type: none;
+        padding: 0;
+        overflow: auto;
+        height: 355px;
+    }
+
+    .friends__item{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 60px;
+        padding-left: 7px;
+        padding-right: 15px;
+        margin-bottom: 5px;
+        
+    }
+
+    .friends__item:hover, .friends__item:active{
+        background-color: #f0f0f0;
+    }
+
+    .friends__avatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 45px;
+        height: 45px;
+        background-color: #f0f0f0;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    .friends__avatar img{
+        width: 100%;
+    }
+
+    .friends__name{
+        font-weight: 500;
+        font-size: 12px;
+        flex-grow: 1;
+        padding-right: 10px;
+    }
+
+    .friends__add, .friends__remove{
+        width: 15px;
+        height: 15px;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        position: relative
+    }
+
+    .friends__add span, .friends__remove span{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 4px;
+    }
+
+    .friends__add:before, .friends__add:after, .friends__remove:before, .friends__remove:after{
+        content: "";
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 4px;
+        background-color: #999999;
+        border-radius: 3px;
+    }
+
+    .friends__add:before{
+        transform: rotate(-90deg)
+    }
+
+    .friends__remove:before{
+        transform: rotate(-45deg);
+    }
+
+    .friends__remove:after{
+        transform: rotate(45deg)
+    }
+
+.footer{
+    background-color: #f0f0f0;
+    height: 45px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
+}
+
+.save{
+    background-color: #ff8663;
+    width: 87px;
+    height: 30px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+
