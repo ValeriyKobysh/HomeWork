@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{htmlWebpackPlugin.options.title}}</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://vk.com/js/api/openapi.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="title">Выберите друзей</span>
+            <div class="search">
+                <input id="download" type="text" class="search__input" placeholder="Начните вводить имя друга">
+                <input id="favorite" type="text" class="search__input" placeholder="Начните вводить имя друга">
+            </div>
+        </header>
+        <div class="friends">
+            <div>
+                <span class="friends__title">Ваши друзья</span>
+                {{!-- <div class="left"> --}}
+                    <ul id="js-left-friends" class="friends__list left">
+                        {{!-- <li class="friends__item">
+                            <span class="friends__avatar"><img src="" alt=""></span>
+                            <span class="friends__name"></span>
+                            <button class="friends__add"><span></span></button>
+                        </li> --}}
+                    </ul>
+                {{!-- </div> --}}
+            </div>
+            <div>
+                <span class="friends__title">Друзья в списке</span>
+                {{!-- <div class="right"> --}}
+                    <ul id="js-right-friends" class="friends__list right">
+                        {{!-- <li class="friends__item">
+                            <span class="friends__avatar"><img src="" alt=""></span>
+                            <span class="friends__name"></span>
+                            <button class="friends__remove"><span></span></button>
+                        </li> --}}
+                    </ul>
+                {{!-- </div> --}}
+            </div>
+        </div>
+        <footer class="footer">
+            <button class="save">Сохранить</button>
+        </footer>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
